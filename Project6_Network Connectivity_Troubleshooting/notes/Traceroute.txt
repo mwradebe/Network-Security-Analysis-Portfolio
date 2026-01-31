@@ -1,0 +1,29 @@
+Hop #,IP Address,Who is this?,What's happening?
+
+1,172.19.0.1,WSL Gateway,"This is the virtual ""exit"" from your Linux environment into Windows. Notice it responded here! (Unlike your previous ping)."
+
+2,192.168.0.1,Your Home Router,This is the physical box in your house/office. Your data has officially left your computer and hit the hardware.
+
+3 & 4,* * *,Hidden Routers,"These are routers (likely at your ISP) that are configured to be ""invisible."" They pass your data but refuse to identify themselves for security."
+
+5,10.195.18.1,ISP Network,You are now inside your Internet Service Provider's (ISP) private infrastructure.
+
+8,192.178.74.198,Google's Front Door,"You've reached Google's massive global network (the ""Edge"")."
+
+9,142.251.47.46,Google.com,Destination reached! This is the specific server that handled your request.
+
+
+Low numbers (under 5ms): You are still on your own computer.
+
+Higher numbers (20ms+): data is physically traveling long distances over fiber-optic cables.
+
+
+if you cant get to Google :
+
+run traceroute.
+
+If the dots (* * *) start at Hop 2, the problem is your Home Router.
+
+If the dots start at Hop 5, the problem is your ISP.
+
+If it gets all the way to Hop 8 and then stops, Google is having a bad day.

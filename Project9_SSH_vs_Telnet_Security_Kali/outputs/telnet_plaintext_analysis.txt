@@ -1,0 +1,302 @@
+
+===================================================================
+Follow: tcp,ascii
+Filter: tcp.stream eq 0
+Node 0: 127.0.0.1:46948
+Node 1: 127.0.0.1:23
+33
+..&..&........... ..!.."..'.....#
+	21
+..%..&..... ..#..'..$
+	29
+..&..&...........!.."..".....
+12
+..%..&.....$
+73
+....x......".....b........b.....B.
+................................"....
+	27
+..... .....#.....'.........
+116
+.. .38400,38400....#.DESKTOP-EMDE8R1.localdomain:0....'..DISPLAY.DESKTOP-EMDE8R1.localdomain:0......XTERM-256COLOR..
+	3
+...
+3
+...
+	16
+........!......"
+9
+........"
+	124
+.."................
+.....................
+Linux 6.6.87.2-microsoft-standard-WSL2 (DESKTOP-EMDE8R1.localdomain) (pts/4)
+
+
+	1
+.
+	1
+.
+	23
+DESKTOP-EMDE8R1 login: 
+1
+m
+	1
+m
+1
+w
+	1
+w
+1
+r
+	1
+r
+1
+a
+	1
+a
+1
+d
+	1
+d
+1
+e
+	1
+e
+1
+b
+	1
+b
+1
+e
+	1
+e
+1
+
+	2
+
+
+	10
+Password: 
+1
+9
+1
+5
+1
+0
+1
+4
+1
+1
+1
+5
+1
+
+	2
+
+
+	115
+Linux DESKTOP-EMDE8R1 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64
+
+	289
+
+The programs included with the Kali GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Kali GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+	231
+.]3008;start=b9c1792ddd26404f94c2addf0af054f8;user=root;hostname=DESKTOP-EMDE8R1;machineid=2bf3ff97379643ae88e23929682233e7;bootid=f097aff9f59144f5bae60e607d816d8c;pid=1871;comm=login;targetuser=mwradebe;sessionid=c5;type=session.\
+	216
+.]3008;start=0b692e01-809d-4b6c-a307-246f5f8ccde5;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=shell;cwd=/home/mwradebe.\
+	168
+.[?2004h.]0;mwradebe@DESKTOP-EMDE8R1: ~..[;32m.........(.[1;34mmwradebe...DESKTOP-EMDE8R1.[;32m)-[.[0;1m~.[;32m].
+.[;32m.......[1;34m$.[0m ..[;32m.......[1;34m$.[0m 
+1
+w
+	31
+w..[;32m.......[1;34m$.[0m .[C
+1
+h
+	34
+h..[;32m.......[1;34m$.[0m .[C.[C
+1
+o
+	1
+o
+1
+a
+	1
+a
+1
+m
+	1
+m
+1
+i
+	1
+i
+1
+
+	12
+
+.[?2004l.
+	218
+.]3008;start=8aa52500-f451-4a68-9211-c63f994b93eb;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=command;cwd=/home/mwradebe.\
+	10
+mwradebe
+
+	2
+
+
+	62
+.]3008;end=8aa52500-f451-4a68-9211-c63f994b93eb;exit=success.\
+	216
+.]3008;start=0b692e01-809d-4b6c-a307-246f5f8ccde5;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=shell;cwd=/home/mwradebe.\
+	168
+.[?2004h.]0;mwradebe@DESKTOP-EMDE8R1: ~..[;32m.........(.[1;34mmwradebe...DESKTOP-EMDE8R1.[;32m)-[.[0;1m~.[;32m].
+.[;32m.......[1;34m$.[0m ..[;32m.......[1;34m$.[0m 
+1
+l
+	31
+l..[;32m.......[1;34m$.[0m .[C
+1
+s
+	34
+s..[;32m.......[1;34m$.[0m .[C.[C
+1
+ 
+	1
+ 
+1
+-
+	1
+-
+1
+l
+	1
+l
+1
+a
+	1
+a
+1
+
+	12
+
+.[?2004l.
+	218
+.]3008;start=d46aea91-cc2a-48e2-9109-261a25560831;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=command;cwd=/home/mwradebe.\
+	10
+total 68
+
+	1008
+drwx------  7 mwradebe mwradebe  4096 Dec 28 21:15 .[0m.[01;34m..[0m
+drwxr-xr-x  3 root     root      4096 Dec 28 16:23 .[01;34m...[0m
+-rw-------  1 mwradebe mwradebe    22 Dec 28 21:15 .bash_history
+-rw-r--r--  1 mwradebe mwradebe   220 Dec 28 16:23 .bash_logout
+-rw-r--r--  1 mwradebe mwradebe  5551 Dec 28 16:23 .bashrc
+-rw-r--r--  1 mwradebe mwradebe  3526 Dec 28 16:23 .bashrc.original
+drwxr-xr-x  3 mwradebe mwradebe  4096 Dec 28 16:23 .[01;34m.config.[0m
+drwxr-xr-x  3 mwradebe mwradebe  4096 Dec 28 16:23 .[01;34m.java.[0m
+drwxr-xr-x  3 mwradebe mwradebe  4096 Dec 28 16:23 .[01;34m.local.[0m
+-rw-r--r--  1 mwradebe mwradebe   807 Dec 28 16:23 .profile
+drwx------  2 mwradebe mwradebe  4096 Dec 28 21:15 .[01;34m.ssh.[0m
+-rw-r--r--  1 mwradebe mwradebe     0 Dec 28 17:02 .sudo_as_admin_successful
+-rw-r--r--  1 mwradebe mwradebe   336 Dec 28 16:23 .zprofile
+-rw-r--r--  1 mwradebe mwradebe 10855 Dec 28 16:23 .zshrc
+drwxr-xr-x 11 mwradebe mwradebe  4096 Dec 28 21:42 .[01;34mLabs.[0m
+
+	2
+
+
+	62
+.]3008;end=d46aea91-cc2a-48e2-9109-261a25560831;exit=success.\
+	216
+.]3008;start=0b692e01-809d-4b6c-a307-246f5f8ccde5;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=shell;cwd=/home/mwradebe.\
+	168
+.[?2004h.]0;mwradebe@DESKTOP-EMDE8R1: ~..[;32m.........(.[1;34mmwradebe...DESKTOP-EMDE8R1.[;32m)-[.[0;1m~.[;32m].
+.[;32m.......[1;34m$.[0m ..[;32m.......[1;34m$.[0m 
+8
+cat /etc
+	8
+cat /etc
+7
+/passwd
+	7
+/passwd
+1
+
+	12
+
+.[?2004l.
+	218
+.]3008;start=f9783174-bcdd-4a53-9371-d0910cd9beff;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=command;cwd=/home/mwradebe.\
+	1400
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon:/usr/lib/dhcpcd:/bin/false
+messagebus:x:991:991:System Message Bus:/nonexistent:/usr/sbin/nologin
+tcpdump:x:101:102::/nonexistent:/usr/sbin/nologin
+_rpc:x:102:65534::/run/rpcbind:/usr/sbin/nologin
+sshd:x:990:65534:sshd user:/run/sshd:/usr/sbin/nologin
+statd:x:103:65534::/var/lib/nfs:/usr/sbin/nologin
+mwradebe:x:1000:1000::/home/mwradebe:/bin/bash
+postgres:x:104:106:PostgreSQL administrator:/var/lib/postgresql:/bin/bash
+
+	2
+
+
+	62
+.]3008;end=f9783174-bcdd-4a53-9371-d0910cd9beff;exit=success.\
+	216
+.]3008;start=0b692e01-809d-4b6c-a307-246f5f8ccde5;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=shell;cwd=/home/mwradebe.\
+	168
+.[?2004h.]0;mwradebe@DESKTOP-EMDE8R1: ~..[;32m.........(.[1;34mmwradebe...DESKTOP-EMDE8R1.[;32m)-[.[0;1m~.[;32m].
+.[;32m.......[1;34m$.[0m ..[;32m.......[1;34m$.[0m 
+1
+e
+	31
+e..[;32m.......[1;34m$.[0m .[C
+1
+x
+	34
+x..[;32m.......[1;34m$.[0m .[C.[C
+1
+i
+	1
+i
+1
+t
+	1
+t
+1
+
+	12
+
+.[?2004l.
+	226
+.]3008;start=641ba2f1-9dd9-4c3b-b1d8-17eebd273e04;machineid=2bf3ff97379643ae88e23929682233e7;user=mwradebe;hostname=DESKTOP-EMDE8R1;bootid=f097aff9-f591-44f5-bae6-0e607d816d8c;pid=1879;type=command;cwd=/home/mwradebe.\logout
+
+	45
+.]3008;end=b9c1792ddd26404f94c2addf0af054f8.\
+===================================================================

@@ -1,0 +1,19 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.2-Ubuntu <<>> google.com AAAA
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21650
+;; flags: qr rd ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;google.com.			IN	AAAA
+
+;; ANSWER SECTION:
+google.com.		0	IN	AAAA	2c0f:fb50:4002:801::200e
+
+;; Query time: 71 msec
+;; SERVER: 172.19.0.1#53(172.19.0.1) (UDP)
+;; WHEN: Sat Dec 20 19:40:00 SAST 2025
+;; MSG SIZE  rcvd: 66
+

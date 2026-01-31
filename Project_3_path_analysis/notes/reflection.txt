@@ -1,0 +1,12 @@
+Ping measures reachability , letency and loss
+traceroute maps paths and not performance
+ICMP may be blocked intentionally
+packet captures confirm command linne claims
+Linux provides deeper diagnostic metrics
+
+ping measures latency(time) not bandwidth(speed): ping is like a shout you shout "hello" and wait for the echo
+Latency is time it takes to hear the shout
+
+A failed ping doesnt always mean the server is down,  it could mean the server is just ignoring you
+ICMP = low priority traffic , mant admins block it 
+Ping = tool and ICMP = language 

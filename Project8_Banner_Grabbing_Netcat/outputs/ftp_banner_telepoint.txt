@@ -1,0 +1,1 @@
+Connection to mirror.telepoint.bg (78.128.80.70) 21 port [tcp/ftp] succeeded!

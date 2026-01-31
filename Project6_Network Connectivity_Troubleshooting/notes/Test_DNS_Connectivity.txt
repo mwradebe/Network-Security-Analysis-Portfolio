@@ -1,0 +1,4 @@
+8.8.8.8		google.com	Meaning
+works		works		Network +DNS OK
+Works		Fails		DNS Problem
+Fails		Fails		Connectivity Issue

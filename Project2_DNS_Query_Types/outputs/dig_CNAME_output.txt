@@ -1,0 +1,36 @@
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.2-Ubuntu <<>> www.google.com CNAAME
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29883
+;; flags: qr rd ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;www.google.com.			IN	A
+
+;; ANSWER SECTION:
+www.google.com.		0	IN	A	142.251.47.4
+
+;; Query time: 1071 msec
+;; SERVER: 172.19.0.1#53(172.19.0.1) (UDP)
+;; WHEN: Sat Dec 20 19:46:34 SAST 2025
+;; MSG SIZE  rcvd: 62
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 47649
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;CNAAME.				IN	A
+
+;; AUTHORITY SECTION:
+.			3600	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2025122000 1800 900 604800 86400
+
+;; Query time: 2294 msec
+;; SERVER: 172.19.0.1#53(172.19.0.1) (UDP)
+;; WHEN: Sat Dec 20 19:46:37 SAST 2025
+;; MSG SIZE  rcvd: 110
+

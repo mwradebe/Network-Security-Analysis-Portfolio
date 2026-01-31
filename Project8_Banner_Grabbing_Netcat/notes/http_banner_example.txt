@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Date: Sat, 27 Dec 2025 19:23:14 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-RAY: 9b4b30f99ba2038c-JNB
+Last-Modified: Sat, 20 Dec 2025 05:42:21 GMT
+Allow: GET, HEAD
+Accept-Ranges: bytes
+Age: 4024
+cf-cache-status: HIT
+Server: cloudflare
+
+201
+<!doctype html><html lang="en"><head><title>Example Domain</title><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.<p><a href="https://iana.org/domains/example">Learn more</a></div></body></html>
+
+0
+

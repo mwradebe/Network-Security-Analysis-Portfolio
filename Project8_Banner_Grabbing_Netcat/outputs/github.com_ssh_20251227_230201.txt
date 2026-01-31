@@ -1,0 +1,2 @@
+Connection to github.com (20.87.245.0) 22 port [tcp/ssh] succeeded!
+SSH-2.0-aae3c6b

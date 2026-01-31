@@ -1,0 +1,210 @@
+========================================
+TELNET VS SSH SECURITY COMPARISON
+========================================
+Date: 30/12/2025
+Analyst: Mduduzi W Radebe
+
+========================================
+TEST METHODOLOGY
+========================================
+
+1. Captured Telnet login traffic (port 23)
+2. Captured SSH login traffic (port 22)
+3. Analyzed both with tshark/Wireshark
+4. Searched for credentials in packet data
+5. Compared encryption effectiveness
+
+========================================
+TELNET RESULTS (PORT 23)
+========================================
+
+CREDENTIAL VISIBILITY: COMPLETELY EXPOSED
+
+Username: mduduzi (VISIBLE IN PLAINTEXT)
+Password: [my actual password] (VISIBLE IN PLAINTEXT)
+
+Commands executed:
+- whoami (VISIBLE)
+- pwd (VISIBLE)
+- ls -la (VISIBLE)
+- cat /etc/passwd (VISIBLE - entire file content readable)
+
+Packet Analysis:
+- Protocol: Telnet (unencrypted)
+- Data transmission: Character-by-character plaintext
+- Encryption: NONE
+- Attacker capability: FULL credential recovery
+
+Evidence File: telnet_plaintext_analysis.txt
+Capture File: telnet_capture.pcap
+
+SECURITY RISK LEVEL: CRITICAL
+Any attacker with network access can:
+- Capture username and password
+- Read all commands executed
+- View all command outputs
+- Impersonate the user immediately
+
+========================================
+SSH RESULTS (PORT 22)
+========================================
+
+CREDENTIAL VISIBILITY: FULLY PROTECTED
+
+Username: NOT visible (encrypted)
+Password: NOT visible (encrypted)
+
+Commands executed:
+- whoami (ENCRYPTED)
+- pwd (ENCRYPTED)
+- ls -la (ENCRYPTED)
+- cat /etc/passwd (ENCRYPTED)
+
+Packet Analysis:
+- Protocol: SSH-2.0 (encrypted)
+- Data transmission: Encrypted binary data
+- Encryption: Strong cryptographic algorithms
+- Attacker capability: CANNOT recover credentials
+
+Evidence File: ssh_encrypted_analysis.txt
+Capture File: ssh_capture.pcap
+
+SECURITY RISK LEVEL:  SECURE
+Attacker with packet capture sees:
+- Random encrypted bytes
+- SSH version banner only
+- No usernames, passwords, or command data
+
+========================================
+COMPARATIVE ANALYSIS
+========================================
+
+TELNET WEAKNESSES:
+1. Zero encryption (all data plaintext)
+2. Passwords transmitted as typed
+3. Commands and outputs fully readable
+4. No protection against network sniffing
+5. No protection against man-in-the-middle attacks
+
+SSH STRENGTHS:
+1. Full encryption of all data
+2. Passwords never visible on network
+3. Commands and outputs protected
+4. Resistant to network sniffing
+5. Protects against man-in-the-middle attacks
+6. Supports key-based authentication (even stronger)
+
+========================================
+ATTACK SCENARIO DEMONSTRATION
+========================================
+
+SCENARIO: Insider threat or compromised workstation
+
+TELNET ENVIRONMENT:
+Step 1: Attacker runs tcpdump on compromised machine
+Step 2: Admin logs into server via Telnet
+Step 3: Attacker opens packet capture
+Step 4: Attacker reads username/password in plaintext
+Step 5: Attacker logs into server with stolen credentials
+Result: FULL SYSTEM COMPROMISE
+
+SSH ENVIRONMENT:
+Step 1: Attacker runs tcpdump on compromised machine
+Step 2: Admin logs into server via SSH
+Step 3: Attacker opens packet capture
+Step 4: Attacker sees only encrypted gibberish
+Step 5: Attacker CANNOT recover credentials
+Result: ATTACK PREVENTED
+
+========================================
+COMPLIANCE IMPLICATIONS
+========================================
+
+PCI-DSS (Payment Card Industry):
+Requirement 2.3: "Encrypt all non-console administrative access"
+TELNET: FAILS (no encryption)
+SSH: COMPLIES (encrypted)
+
+HIPAA (Healthcare):
+Technical Safeguards: Encryption and decryption
+TELNET:  FAILS (plaintext PHI exposure risk)
+SSH: COMPLIES (encrypted transmission)
+
+ISO 27001:
+A.10.1.1: Policy on use of cryptographic controls
+TELNET:  FAILS (no cryptography)
+SSH: COMPLIES (strong encryption)
+
+NIST Cybersecurity Framework:
+PR.DS-2: Data in transit is protected
+TELNET: FAILS (unprotected)
+SSH:  COMPLIES (protected)
+
+========================================
+REAL-WORLD BREACH EXAMPLES
+========================================
+
+Example 1: 2019 Australian Parliament Breach
+- Attackers captured Telnet credentials
+- Used for lateral movement in network
+- Resulted in data breach and system compromise
+
+Example 2: 2018 Manufacturing Company Breach
+- Legacy SCADA systems using Telnet
+- Credentials sniffed from network traffic
+- Ransomware deployed across network
+
+Example 3: University Network Compromise
+- Student captured admin Telnet credentials
+- Used packet sniffer on campus WiFi
+- Gained unauthorized access to grade systems
+
+========================================
+RECOMMENDATIONS
+========================================
+
+IMMEDIATE ACTIONS:
+1. DISABLE Telnet (port 23) on ALL devices
+2. ENABLE SSH (port 22) for remote access
+3. ENFORCE SSH key authentication (disable passwords)
+4. CONFIGURE SSH to use strong ciphers only
+5. AUDIT network for any remaining Telnet services
+6. UPDATE security policies to prohibit Telnet
+
+MIGRATION PLAN:
+Week 1: Inventory all devices using Telnet
+Week 2: Test SSH configuration on non-critical devices
+Week 3: Migrate critical devices to SSH
+Week 4: Disable Telnet network-wide
+Week 5: Verify compliance via security scan
+
+MONITORING:
+- Alert on any Telnet connection attempts (port 23)
+- Log all SSH authentication attempts
+- Review SSH logs weekly for anomalies
+- Perform quarterly security audits
+
+========================================
+CONCLUSION
+========================================
+
+Through practical packet analysis, I have demonstrated
+that Telnet transmits ALL data in plaintext, including
+usernames and passwords. An attacker with network access
+can trivially capture and extract credentials.
+
+SSH encryption prevents this attack entirely. Even with
+full packet captures, attackers cannot recover credentials
+or read command data.
+
+There is NO valid security justification for using Telnet
+in 2025. The migration cost is minimal compared to the
+massive security risk of credential exposure.
+
+VERDICT: TELNET MUST BE ELIMINATED FROM ALL NETWORKS.
+
+========================================
+Analyst: Mduduzi W Radebe
+Date: 30/12/2025
+Evidence Location: ~/Labs/Project9_SSH_vs_Telnet_Security_Kali/
+========================================

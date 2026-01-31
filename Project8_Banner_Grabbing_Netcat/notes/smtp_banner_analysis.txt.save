@@ -1,0 +1,19 @@
+SMTP Banner Analysis - Gmail
+=============================
+
+Banner: 220 smtp.gmail.com ESMTP Exim 4.94.2 Ubuntu
+
+Information Revealed:
+1. Service: SMTP (Email server)
+2. Software: Exim version 4.94.2
+3. OS: Ubuntu
+4. Extended features: STARTTLS (encryption supported)
+
+Security Implications:
+- Version information could help attackers find exploits
+- STARTTLS means encrypted email is possible
+- Open relay test would be next step in security audit
+
+Commands tested:
+- EHLO test (revealed server capabilities)
+- QUIT (graceful disconnec

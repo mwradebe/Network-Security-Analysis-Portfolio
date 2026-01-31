@@ -1,0 +1,19 @@
+SSH Banner Comparison
+=====================
+
+GitHub SSH Banner:
+- SSH-2.0-babeld-2e9d163d
+- Custom SSH implementation
+- No OS information revealed
+- Security-conscious (minimal information disclosure)
+
+My Ubuntu SSH Banner:
+- SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+- Standard OpenSSH implementation
+- Reveals OS (Ubuntu)
+- Reveals exact version (potential vulnerability if outdated)
+
+Security Implication:
+- GitHub's banner reveals LESS information (better security)
+- My banner reveals MORE information (easier to exploit if vulnerable)
+- Recommendation: Customize SSH banner to hide OS/version details
