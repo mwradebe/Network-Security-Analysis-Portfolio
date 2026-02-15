@@ -1,0 +1,57 @@
+name: Update Lab List
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Offensive-Security-Labs/**'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Generate Lab List
+        id: lab_list
+        run: |
+          echo "### 🔬 Lab Reports" > labs.txt
+          echo "| Lab Name | Link |" >> labs.txt
+          echo "| :--- | :--- |" >> labs.txt
+          find Offensive-Security-Labs -name "*.pdf" | sort | while read file; do
+            filename=$(basename "$file")
+            # Replace spaces with %20 for URL and remove .pdf for title
+            clean_title="${filename%.*}"
+            url_path="${file// /%20}"
+            echo "| 📄 $clean_title | [View Report](./$url_path) |" >> labs.txt
+          done
+
+      - name: Inject into README
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const readmePath = 'README.md';
+            const labsContent = fs.readFileSync('labs.txt', 'utf8');
+            let readme = fs.readFileSync(readmePath, 'utf8');
+            
+            const startMarker = '';
+            const endMarker = '';
+            
+            const regex = new RegExp(`${startMarker}[\\s\\S]*?${endMarker}`);
+            const newContent = `${startMarker}\n${labsContent}\n${endMarker}`;
+            
+            if (readme.replace(regex, newContent) !== readme) {
+              fs.writeFileSync(readmePath, readme.replace(regex, newContent));
+            }
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update README with new labs"
+          git push
